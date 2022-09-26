@@ -1,7 +1,7 @@
 import React from "react";
 import "./footer.css";
 
-function Footer() {
+function Footer(props) {
 	return (
 		<div>
 			<footer>
@@ -9,6 +9,9 @@ function Footer() {
 					<li>Regulamin</li>
 					<li>FAQ</li>
 					<li>O Nas</li>
+					<li>
+						Kontakt: {props.contactEmail} {props.companyData.city}{" "}
+					</li>
 				</ul>
 			</footer>
 		</div>
