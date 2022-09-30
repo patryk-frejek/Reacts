@@ -10,7 +10,7 @@ function Footer(props) {
 					<li>FAQ</li>
 					<li>O Nas</li>
 					<li>
-						Kontakt: {props.contactEmail} {props.companyData.city}{" "}
+					Kontakt: {props.companyData.email}, {props.companyData.city} 
 					</li>
 				</ul>
 			</footer>

@@ -10,11 +10,13 @@ class Heading extends React.Component {
 		return (
 			<div>
 				<nav>
-					<h2>{this.props.headerTitle};</h2>
+					<h1>{this.props.headerTitle}</h1>
+					<h2>{this.props.subTitle}</h2>
 					<ul className="navigation">
+						<li>Home</li>
+						<li>Kontakt {this.props.companyData.email}</li>
+						<li>Aktualności</li>
 						<li>{this.state.link1}</li>
-						<li>Blog</li>
-						<li>Articles</li>
 					</ul>
 				</nav>
 			</div>

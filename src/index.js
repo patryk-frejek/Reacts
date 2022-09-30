@@ -4,6 +4,7 @@ import "./index.css";
 import App from "./App";
 import Footer from "./components/footer/Footer";
 import Heading from "./components/heading/Heading";
+import Gallery from "./components/gallery/Gallery";
 import reportWebVitals from "./reportWebVitals";
 const companyData = {
 	email: "contact@example.com",
@@ -13,8 +14,12 @@ const companyData = {
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
 	<React.StrictMode>
-		<Heading headerTitle="Welcome to the club " />
-		<App />
+		<Heading
+			companyData={companyData}
+			headerTitle="Witamy na stronie"
+			subTitle="prosimy jednak stąd wyjść."
+		/>
+		<Gallery />
 		<Footer companyData={companyData} contactEmail="admin@example.com" />
 	</React.StrictMode>
 );
