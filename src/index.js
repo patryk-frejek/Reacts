@@ -1,11 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import App from "./App";
+//import App from "./App";
 import Footer from "./components/footer/Footer";
 import Heading from "./components/heading/Heading";
 import Gallery from "./components/gallery/Gallery";
-import Test from "./components/Test/Test";
 import reportWebVitals from "./reportWebVitals";
 const companyData = {
 	email: "contact@example.com",
@@ -21,7 +20,6 @@ root.render(
 			subTitle="prosimy jednak stąd wyjść."
 		/>
 		<Gallery />
-		<Test />
 		<Footer companyData={companyData} contactEmail="admin@example.com" />
 	</React.StrictMode>
 );
